@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Montserrat:ital,wght@0,200;0,300;1,300&family=Unbounded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Montserrat:ital,wght@0,200;0,300;1,300;1,800&family=Unbounded:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+.wrap{
+    width: 100%;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+header{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    background-color:none;
+    position: fixed;
+    justify-content: space-between;
+    padding: 0 70px;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+}
+.header._active{
+    background-color:rgba(22, 22, 22, 0.9);
+}
+
+.headerLogo{
+    width: 180px;
+    height: 90px;
+    display: flex;
+    background-position: center;
+    background-image: url(https://static.tildacdn.com/tild3736-3935-4637-a135-326430333337/Group_5.svg);
+    cursor: pointer;
+}
+.headerItems{
+width: 350px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-family: 'Manrope';
+font-size: 20px;
+font-weight:900;
+}
+.headerItems a{
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+.headerItems a:hover{
+    color: #df3f29;
+}
+.FirstScreen{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+  }
+.Slide1{
+    background-position: center;
+    background-size: cover;
+    background-image:url(https://thumb.tildacdn.com/tild3062-6538-4363-a533-666530346263/-/format/webp/___.jpg);
+}
+.Slide2{
+    background-position: center;
+    background-size: cover;
+    background-image:url(https://thumb.tildacdn.com/tild3963-6633-4436-a463-653863643666/-/format/webp/___2.png);
+}
+.Slide3{
+    background-position: center;
+    background-size: cover;
+    background-image:url(https://thumb.tildacdn.com/tild6538-3365-4333-b466-323463646165/-/format/webp/_1_-min.png);
+}
+.Slide4{
+    background-position: center;
+    background-size: cover;
+    background-image:url(https://static.tildacdn.com/tild3865-6565-4866-a237-323762363634/_2-min_1.png);
+}
+.swiper-button-next, .swiper-button-prev{
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+  }
+.swiper-pagination{
+    color: #fff;
+}
+.SecondScreen{
+    width: 100%;
+    min-height:350vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131313;
+    padding: 90px 0px;
+}
+.productFiltLine{
+    width: 75%;
+    height: 60px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+.fiyLinItem{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    cursor: pointer;
+}
+.fiyLinItem:hover{
+    color: #ff4027;
+}
+.allFilt{
+    background-color: #df3f29;
+    color: #fff;
+}
+.ProductBox1{
+    width: 83%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.ProductBox2{
+    width: 83%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.ProductBox3{
+    width: 83%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.ProductBox4{
+    width: 83%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.productBox{
+width: 370px;
+height: 650px;
+display: flex;
+position: relative;
+background-color: #fff;
+flex-direction: column;
+justify-content: space-between;
+text-align: flex-start;
+font-family: Montserrat;
+}
+.PrName{
+    font-weight: bold;
+    position: relative;
+}
+.PrSize{
+    font-weight: 300;
+    position: relative;
+    top: 10px;
+}
+.price{
+    position: relative;
+    top: 20px; 
+    font-weight: bold;
+}
+.productBox img{
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+.prInf{
+    width: 100%;
+    padding: 0px 30px;
+}
+.productBuyBut{
+    width: 200px;
+    height: 30px;
+    position: relative;
+    background-color: #fb472e;
+    top: 60px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+.PrAllbut{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    background-color: #fb472e;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family:Montserrat ;
+    font-weight:bolder;
+}
+.PassBox{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.pasBoxBox{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background-color: #131313;
+}
+.infBox{
+    width: 100%;
+    height: 63vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+}
+.infItem{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background-color: #131313;
+    justify-content: space-between;
+}
+.infLeftSide{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.infLestLogo p{
+    color: #ffffff;
+    font-size: 33px;
+    font-family: 'Manrope',Arial,sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-decoration: none;
+}
+.infLestLogo{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    color: #fff;
+    text-align:start;
+    position: relative;
+    left: 20%;
+}
+.leftInf{
+    width: 350px;
+    height: 70px;
+    display: flex;
+    border-left: solid 5px #639bf0;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 20px;
+    position: relative;
+    left: 20%;
+    top: -70px;
+    font-weight: 900;
+}
+.leftInf2{
+    width: 550px;
+    height: 280px;
+    display: flex;
+    border-left: solid 5px #ffee00;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 900;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+    top: -50px;
+}
+.infRightSide{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.infRightSiderBox{
+    width: 68%;
+    height: 550px;
+    display: flex;
+    position: relative;
+    background-position: center;
+    color: #000;
+}
+.sv2Sl1{
+    background-image: url(./img/Sv2SL1.jpg);
+}
+.sv2Sl2{
+    background-image: url(./img/Sv2SL2.jpg);
+}
+.sv2Sl3{
+    background-image: url(./img/Sv2SL3.jpg);
+}
+.sv2Sl4{
+    background-image: url(./img/Sv2SL4.jpg);
+}
+.sv2Sl5{
+    background-image: url(./img/Sv2SL5.jpg);
+}
+.sv2Sl6{
+    background-image: url(./img/Sv2SL6.jpg);
+}
+.sv2Sl7{
+    background-image: url(./img/Sv2SL7.jpg);
+}
+.swiper-button-next{
+    padding:30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-prev{
+    padding:30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Slider3Box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+}
+.Slider3BoxLogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Slider3BoxLogo h2{
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Manrope',Arial,sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.sv3ButonsBox{
+    width: 50%;
+    display: flex;
+}
+.mySwiper3{
+    width: 91%;
+    height: 500px;
+}
+
+#sv3Slide{
+    width: 300px;
+    height: 500px;
+    background-position: center;
+}
+.sv3Sl1{
+    background-image: url(./img/Sv3SL10.jpg);
+}
+.sv3Sl2{
+    background-image: url(./img/Sv3SL1.jpg);
+}
+.sv3Sl3{
+    background-image: url(./img/Sv3SL2.jpg);
+}
+.sv3Sl4{
+    background-image: url(./img/Sv3SL3.jpg);
+}
+.sv3Sl5{
+    background-image: url(./img/Sv3SL4.jpg);
+}
+.sv3Sl6{
+    background-image: url(./img/Sv3SL5.jpg);
+}
+.sv3Sl7{
+    background-image: url(./img/Sv3SL6.jpg);
+}
+.sv3Sl8{
+    background-image: url(./img/Sv3SL7.jpg);
+}
+.sv3Sl9{
+    background-image: url(./img/Sv3SL8.jpg);
+}
+.sv3Sl10{
+    background-image: url(./img/Sv3SL9.jpg);
+}
+.sv3Inf{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.sv3InfP{
+    color: #df3f29;
+    font-size: 20px;
+}
+.socialBoxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.slButBox{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.socialBox1{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    background-color: #ee4434;
+    justify-content: space-around;
+    align-items: center;
+}
+.socialBox i{
+font-size: 30px;
+}
+.socialBoxes a{
+    text-decoration: none;
+    color: #fff;
+}
+.socialBox{
+    cursor: pointer;
+}
+.socialBox p{
+    font-size: 17px;
+    font-weight: bolder;
+    position: relative;
+    top: 8px;
+    }
+    .socialBox2{
+        width: 200px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        background-color: #1c8adb;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Sv3Catal{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .Sv3Catal a{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 'Manrope',Arial,sans-serif;
+        line-height: 1;
+        font-weight: 700;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        text-decoration: none;
+    }
+    .Sv3CatalP{
+width: 500px;
+display: flex;
+justify-content: space-between;
+    }
+    footer{
+        width: 100%;
+        min-height: 200px;
+        background-color: #000;
+        display: flex;
+        color: #fff;
+        justify-content: space-around;
+    }
+    footer a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .futBoxLogo{
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'Manrope',Arial,sans-serif;
+        line-height: 1;
+        font-weight: 700;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        text-decoration: none;
+    }
+    .futBox{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .futBox i{
+font-size: 40px;
+cursor: pointer;
+    }
+    .futPay1Box{
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+    }
